@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Momentry</title>
+    
+    
+    <link rel="stylesheet" href="..//style.css/profil.css"> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-ticket-alt"></i> Momentry
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#"> Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"> Book Ticket</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"> Ticket/Cart</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#"> User Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"> Explore Categories</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="profile-container">
+        <h1 class="page-title">User Profile</h1>
+
+        <div class="welcome-hero">
+            <img src="/assets/profilku.png" alt="Foto Profil" class="profile-pic"> 
+            <h1>Welcome, sir Dio!</h1>
+            <p>Manage your profile, tickets, and account settings.</p>
+        </div>
+
+        <div class="content-section">
+            <div class="section-header">
+                <h2>User Information</h2>
+                <p>Manage your personal details and contact information.</p>
+            </div>
+
+            <div class="card">
+                <h3>Personal Information</h3>
+                <form>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" value="" placeholder="Email Address">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" value="+62 (853) 123-4567">
+                    </div>
+                    <button type="submit" class="btn-primary">Save Changes</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="purchase-header section-header">
+                <div>
+                    <h2>Purchase History</h2>
+                    <p>View all your past and cancelled event ticket purchases.</p>
+                </div>
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+
+            <div class="card">
+                <div class="purchase-list">
+                    <div class="purchase-item">
+                        <div class="item-details">
+                            <strong>Global Music Festival</strong>
+                            <span>August 10, 2024 | Order ID: EVT001-2024-1</span>
+                        </div>
+                        <div class="item-status">
+                            <div class="status-info">2 Tickets <br> Rp. 175.000</div>
+                            <span class="status-badge status-completed">completed</span>
+                            <a href="#" class="view-link"><i class="fas fa-ticket-alt"></i> View E-Ticket</a>
+                        </div>
+                    </div>
+
+                    <div class="purchase-item">
+                        <div class="item-details">
+                            <strong>Art Exhibition Gala</strong>
+                            <span>September 20, 2024 | Order ID: EVT002-2024-1</span>
+                        </div>
+                        <div class="item-status">
+                            <div class="status-info">1 Tickets <br> Rp. 80.000</div> 
+                            <span class="status-badge status-completed">completed</span>
+                            <a href="#" class="view-link"><i class="fas fa-ticket-alt"></i> View E-Ticket</a>
+                        </div>
+                    </div>
+
+                    <div class="purchase-item">
+                        <div class="item-details">
+                            <strong>Local Sports Match</strong>
+                            <span>June 07, 2024 | Order ID: EVT003-2024-1</span>
+                        </div>
+                        <div class="item-status">
+                            <div class="status-info">3 Tickets </div>
+                            <span class="status-badge status-cancelled">cancelled</span>
+                            <a href="#" class="view-link"><i class="fas fa-ticket-alt"></i> View E-Ticket</a> 
+                        </div>
+                    </div>
+
+                    <div class="purchase-item">
+                        <div class="item-details">
+                            <strong>Comedy Night Live</strong>
+                            <span>May 15, 2024 | Order ID: EVT004-2024-1</span>
+                        </div>
+                        <div class="item-status">
+                            <div class="status-info">2 Tickets <br> Rp. 70.000</div>
+                            <span class="status-badge status-completed">completed</span>
+                            <a href="#" class="view-link"><i class="fas fa-ticket-alt"></i> View E-Ticket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="section-header">
+                <h2>Account Settings</h2>
+                <p>Manage your security and notification preferences.</p>
+            </div>
+
+            <div class="card">
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <strong>Change Password</strong>
+                        <span>Create a new password to keep your account safe.</span>
+                    </div>
+                    <div class="setting-action">
+                        <a href="#">Update Password <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <strong>Email Notifications</strong>
+                        <span>Receive updates on your purchases and event recommendations.</span>
+                    </div>
+                    <div class="setting-action">
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <strong>Two-Factor Authentication</strong>
+                        <span>Add an extra layer of security to your account.</span>
+                    </div>
+                    <div class="setting-action">
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <strong>Delete Account</strong>
+                        <span>Permanently remove your account and all associated data.</span>
+                    </div>
+                    <div class="setting-action">
+                        <button>Delete Account <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Momentry. RADICO All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
